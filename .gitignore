@@ -1,0 +1,7 @@
+#Variables de entorno
+.env
+# Dependencias de Node
+node_modules
+
+#Carpeta de producción Ó Carpeta construida
+dist

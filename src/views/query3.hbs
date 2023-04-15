@@ -1,0 +1,42 @@
+<table id="Tabla" class="table table-borderless table-hover rounded-2">
+     <h2 id="mensaje">Mostramos solo los licores que son Whisky</h2>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Contenido</th>
+            <th>Precio</th>
+            <th>Tipo</th>
+            <th>Disponible</th>
+            <th>Total Vendidos</th>
+            {{!-- <th>Acciones</th> --}}
+
+        </tr>
+    </thead>
+
+    <tbody>
+        
+    {{#each producs}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{nombre}}</td>
+            <td>{{contenido}} ml</td>
+            <td>{{precio}}</td>
+            <td>{{tipo}}</td>
+            <td>{{disponibles}}</td>
+            <td>{{vendidos}}</td>
+            {{!-- <td>
+                <div>
+                    <a class="btn btn-secondary mt-1" href="/edit/{{_id}}">Actualizar</a>
+                    <a class="btn btn-outline-danger mt-1" href="/delete/{{_id}}">Eliminar</a>
+                </div>
+            </td> --}}
+        </tr>
+
+    {{/each}}
+
+    </tbody>
+</table>
+
+
+

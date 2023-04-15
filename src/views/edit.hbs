@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body rounded-5  p-4 text-black">
+                <h2>Actualizar licor</h2>
+  <form action="/edit/{{produc._id}}" method="POST">
+    <div>
+      <label for="nombre">Nombre del licor</label>
+      <input
+      class="form-control"
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Nombre"
+        value="{{produc.nombre}}"
+      />
+    </div>
+
+    <div>
+      <label for="cantidad">Cantidad ML</label>
+      <input
+        type="number"
+        class="form-control"
+        id="cantidad"
+        name="contenido"
+        placeholder="Cantidad en ML"
+        value="{{produc.contenido}}"
+      />
+    </div>
+
+    <div>
+      <label for="precio">Precio</label>
+      <input
+        type="number"
+        id="precio"
+        class="form-control"
+        name="precio"
+        placeholder="precio $"
+        value="{{produc.precio}}"
+      />
+    </div>
+
+    <div>
+      <label for="tipo">Tipo</label>
+      <input
+        type="text"
+        id="tipo"
+        class="form-control"
+        name="tipo"
+        placeholder="Tipo de licor"
+        value="{{produc.tipo}}"
+      />
+    </div>
+
+    <div>
+      <label for="disponibles">Disponibles</label>
+      <input
+        type="number"
+        class="form-control"
+        id="disponibles"
+        name="disponibles"
+        placeholder="Cantidad disponible"
+        value="{{produc.disponibles}}"
+      />
+    </div>
+
+    <div>
+      <label for="vendidos">Vendidos</label>
+      <input
+        type="number"
+        id="vendidos"
+        class="form-control"
+        name="vendidos"
+        placeholder="Vendidos"
+        value="{{produc.vendidos}}"
+      />
+    </div>
+
+    <button class="btn btn-info mt-3">Actualizar</button>
+
+  </form>
+</div>
+        </div>
+    </div>
+</div>
